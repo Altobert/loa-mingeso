@@ -11,4 +11,9 @@ import lombok.Setter;
 @Setter
 public class Calification {
 
+    private Integer anioInteger;
+    private Integer semestreInteger;
+    private Integer codigoAlumnoInteger;
+    private Integer codigoAsignaturaInteger;
+    private Float notaFloat;
 }
