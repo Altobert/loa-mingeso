@@ -11,7 +11,7 @@ import lombok.Setter;
 @Setter
 public class Career {
 
-    private Integer codigoCarerrInteger;
-    private String nombreCarrera;
+    private Integer codigoCareerInteger;
+    private String nombreCareerString;
 
 }

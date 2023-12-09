@@ -10,10 +10,7 @@ import lombok.Setter;
 @Getter
 @Setter
 public class PreRequirement {
-
-    //codigo asignatura.
-    //codigo prerequisito.
-
+    
     private Integer codigoAsignatura;
     private Integer codigoPreRequisito;
 
