@@ -5,6 +5,8 @@ import lombok.Data;
 
 @Entity
 @Data
+@Getter
+@Setter
 public class PlanStudy {
 
 }
