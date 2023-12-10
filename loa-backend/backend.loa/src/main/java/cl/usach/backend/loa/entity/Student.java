@@ -20,12 +20,10 @@ public class Student {
     @Id    
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-
     
     @Column(name = "\"Rut\"")
     private String rutStudentString;
-    
-    
+        
     @Column(name = "\"Nombres\"")
     private String nombreStudentString;
     
