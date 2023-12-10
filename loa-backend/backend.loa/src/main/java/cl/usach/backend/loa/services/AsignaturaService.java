@@ -7,9 +7,28 @@ public class AsignaturaService {
 
 
     //consultar maximo de asignaturas por nivel
-    public void consultarMaximoAsignaturasPorNivel(){
-        
+    public Integer consultarMaximoAsignaturasPorNivel(){        
+        return null;
     }
+
+    //consultar si aprobo prerrequisito
+    public Boolean consultarSiAproboPrerrequisito(){
+        return true;
+    }
+
+    //consultar cuantas veces reprobo la asignatura
+    public Integer consultarCuantasVecesReproboAsignatura(){                
+        return null;
+    }
+
+    //consultar reprobaciones por asignatura por nivel
+    public Integer consultarReprobacionesPorAsignaturaPorNivel(){
+        //Si es primer nivel, reprobaciones, tres veces maximo.
+
+        //Si es segundo nivel, reprobaciones, dos veces maximo.
+        return null;
+    }
+
     
 
 }
