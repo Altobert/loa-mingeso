@@ -4,7 +4,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/asignaturas")
-public class ControllerLoaAsignaturas {
+@RequestMapping("/estudiantes")
+public class ControllerEstudiantes {
+
+    
 
 }
