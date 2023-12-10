@@ -16,8 +16,7 @@ import lombok.Setter;
 @Table(name = "plan_estudios")
 public class PlanStudy {
 
-    //codigo asignatura.
-    //codigo prerequisito.
+    
     @Id    
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;

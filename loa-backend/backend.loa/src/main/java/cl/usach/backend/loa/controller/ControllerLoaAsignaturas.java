@@ -3,6 +3,14 @@ package cl.usach.backend.loa.controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import cl.usach.backend.loa.entity.PlanStudy;
+
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+
+
+
 @RestController
 @RequestMapping("/asignaturas")
 public class ControllerLoaAsignaturas {
@@ -20,6 +28,15 @@ public class ControllerLoaAsignaturas {
     
 
     //mostrar alumnos inscritos
-
+    @PostMapping("/registrarAsignatura")
+    public ResponseEntity<PlanStudy> postMethodName(@RequestBody PlanStudy asignaturPlanStudy) {
+        if(asignaturPlanStudy.getNivelInteger() == null){
+            return ResponseEntity.badRequest().build();                        
+        }
+        if(asignaturPlanStudy.getCodigoAsignatura() == null){
+            return ResponseEntity.badRequest().build();                        
+        }
+        return ResponseEntity.ok(asignaturPlanStudy);
+    }
 
 }

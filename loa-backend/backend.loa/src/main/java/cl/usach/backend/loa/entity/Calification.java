@@ -1,5 +1,6 @@
 package cl.usach.backend.loa.entity;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -19,10 +20,19 @@ public class Calification {
     @Id    
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-    private Integer idCalificationInteger;
+    
+    @Column(name = "anio")
     private Integer anioInteger;
+
+    @Column(name = "sem")
     private Integer semestreInteger;
-    private Integer codigoAlumnoInteger;
+
+    @Column(name = "cod_alumno")
+    private String codigoAlumnoString;
+
+    @Column(name = "cod_asig")
     private Integer codigoAsignaturaInteger;
-    private Float notaFloat;
+
+    @Column(name = "nota")
+    private String notaString;
 }
