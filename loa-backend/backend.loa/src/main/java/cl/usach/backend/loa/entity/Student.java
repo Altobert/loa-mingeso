@@ -1,5 +1,6 @@
 package cl.usach.backend.loa.entity;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -18,12 +19,23 @@ public class Student {
 
     @Id    
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Integer id;
+
+    
+    @Column(name = "\"Rut\"")
     private String rutStudentString;
+    
+    
+    @Column(name = "\"Nombres\"")
     private String nombreStudentString;
+    
+    @Column(name = "\"Apellidos\"")
     private String apellidoStudentString;
+    
+    @Column(name = "\"Email\"")
     private String correoStudentString;
-    private String telefonoStudentString;
-    private Integer idCarreraInteger;    
+
+    @Column(name = "cod_carr")        
+    private Integer codigoCarerrInteger;    
 
 }
