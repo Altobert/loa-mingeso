@@ -29,6 +29,11 @@ public class AsignaturaService {
         return null;
     }
 
+    //consultar tope horario
+    public Boolean consultarTopeHorario(){
+        return true;
+    }
+
     
 
 }

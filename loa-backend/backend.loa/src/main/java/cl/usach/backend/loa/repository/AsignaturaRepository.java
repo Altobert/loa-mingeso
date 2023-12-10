@@ -9,8 +9,17 @@ import cl.usach.backend.loa.entity.PlanStudy;
 
 @Repository
 public interface AsignaturaRepository extends JpaRepository<PlanStudy, Integer>{
-
-    //consultar asignaturas por nivel
+    
     List<PlanStudy> findByNivelInteger(Integer nivelInteger);
 
+    List<PlanStudy> findByPlanStudies(Integer codigoAsignatura);
+
+    List<PlanStudy> findByCodigoAsignatura(Integer codigoAsignatura);
+
+    List<PlanStudy> findByCodigoCarerrInteger(Integer codigoCarerrInteger);
+
+    List<PlanStudy> findByCodigoPlan(String codigoPlan);
+
+    List<PlanStudy> findByNombreAsignatura(String nombreAsignatura);
+    
 }
