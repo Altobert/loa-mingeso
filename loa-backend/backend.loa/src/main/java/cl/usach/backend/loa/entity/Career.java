@@ -20,6 +20,7 @@ public class Career {
     @Id    
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
+    
     @Column(name = "codigo")
     private Integer codigoCareerInteger;
     

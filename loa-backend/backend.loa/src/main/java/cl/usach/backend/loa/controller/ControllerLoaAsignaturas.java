@@ -30,6 +30,8 @@ public class ControllerLoaAsignaturas {
     //mostrar alumnos inscritos
     @PostMapping("/registrarAsignatura")
     public ResponseEntity<PlanStudy> postMethodName(@RequestBody PlanStudy asignaturPlanStudy) {
+        //TODO: registrar al menos tres asignaturas
+        
         if(asignaturPlanStudy.getNivelInteger() == null){
             return ResponseEntity.badRequest().build();                        
         }
