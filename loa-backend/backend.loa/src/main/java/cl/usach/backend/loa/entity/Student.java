@@ -30,8 +30,8 @@ public class Student {
     @Column(name = "\"Apellidos\"")
     private String apellidoStudentString;
     
-    @Column(name = "\"Email\"")
-    private String correoStudentString;
+    /*@Column(name = "\"Email\"")
+    private String correoStudentString;*/
 
     @Column(name = "cod_carr")        
     private Integer codigoCarerrInteger;    

@@ -10,6 +10,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 
 
@@ -21,6 +22,7 @@ public class ControllerEstudiantes {
     private StudentService studentService;
 
     @GetMapping("/getAllStudents")
+    @CrossOrigin(origins = "http://localhost:3000")
     public ResponseEntity<List<Student>>  getAllStudents() {
         List<Student> listStudents =  studentService.getAllStudents();
         return ResponseEntity.ok(listStudents);
